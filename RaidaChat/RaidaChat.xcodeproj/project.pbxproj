@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		867BF1B11FBE05A4000DD2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BF1B01FBE05A4000DD2B6 /* AppDelegate.swift */; };
+		867BF1B31FBE05A4000DD2B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BF1B21FBE05A4000DD2B6 /* ViewController.swift */; };
+		867BF1B81FBE05A4000DD2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867BF1B71FBE05A4000DD2B6 /* Assets.xcassets */; };
+		867BF1BB1FBE05A4000DD2B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867BF1B91FBE05A4000DD2B6 /* LaunchScreen.storyboard */; };
+		867BF1C61FBE05A4000DD2B6 /* RaidaChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BF1C51FBE05A4000DD2B6 /* RaidaChatTests.swift */; };
+		867BF1D11FBE05A4000DD2B6 /* RaidaChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BF1D01FBE05A4000DD2B6 /* RaidaChatUITests.swift */; };
+		86CD19E51FDA5BDE00EEC4B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CD19E41FDA5BDE00EEC4B4 /* Main.storyboard */; };
+		86CD19ED1FE1022600EEC4B4 /* WebSocketChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19EC1FE1022500EEC4B4 /* WebSocketChat.swift */; };
+		86CD19EF1FE1244F00EEC4B4 /* GroupChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19EE1FE1244F00EEC4B4 /* GroupChatTableViewController.swift */; };
+		CDEE0A6EE6C7469878A049DF /* Pods_RaidaChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3268A1A88E1A5C7977204202 /* Pods_RaidaChat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		867BF1C21FBE05A4000DD2B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 867BF1A51FBE05A4000DD2B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 867BF1AC1FBE05A4000DD2B6;
+			remoteInfo = RaidaChat;
+		};
+		867BF1CD1FBE05A4000DD2B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 867BF1A51FBE05A4000DD2B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 867BF1AC1FBE05A4000DD2B6;
+			remoteInfo = RaidaChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AA63760DE488EBE93BF1090 /* Pods-RaidaChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaidaChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaidaChat/Pods-RaidaChat.debug.xcconfig"; sourceTree = "<group>"; };
+		3268A1A88E1A5C7977204202 /* Pods_RaidaChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaidaChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		867BF1AD1FBE05A4000DD2B6 /* RaidaChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaidaChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		867BF1B01FBE05A4000DD2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		867BF1B21FBE05A4000DD2B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		867BF1B71FBE05A4000DD2B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		867BF1BA1FBE05A4000DD2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		867BF1BC1FBE05A4000DD2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		867BF1C11FBE05A4000DD2B6 /* RaidaChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaidaChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		867BF1C51FBE05A4000DD2B6 /* RaidaChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidaChatTests.swift; sourceTree = "<group>"; };
+		867BF1C71FBE05A4000DD2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		867BF1CC1FBE05A4000DD2B6 /* RaidaChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaidaChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		867BF1D01FBE05A4000DD2B6 /* RaidaChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidaChatUITests.swift; sourceTree = "<group>"; };
+		867BF1D21FBE05A4000DD2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86CD19E41FDA5BDE00EEC4B4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		86CD19EC1FE1022500EEC4B4 /* WebSocketChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketChat.swift; sourceTree = "<group>"; };
+		86CD19EE1FE1244F00EEC4B4 /* GroupChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChatTableViewController.swift; sourceTree = "<group>"; };
+		C9F7885345BB1B33067CE037 /* Pods-RaidaChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaidaChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaidaChat/Pods-RaidaChat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		867BF1AA1FBE05A4000DD2B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEE0A6EE6C7469878A049DF /* Pods_RaidaChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867BF1BE1FBE05A4000DD2B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867BF1C91FBE05A4000DD2B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35AAF41186BB00A3DF5F59A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AA63760DE488EBE93BF1090 /* Pods-RaidaChat.debug.xcconfig */,
+				C9F7885345BB1B33067CE037 /* Pods-RaidaChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FA3A261CDC4B8DFC26A8A82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3268A1A88E1A5C7977204202 /* Pods_RaidaChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		867BF1A41FBE05A4000DD2B6 = {
+			isa = PBXGroup;
+			children = (
+				867BF1AF1FBE05A4000DD2B6 /* RaidaChat */,
+				867BF1C41FBE05A4000DD2B6 /* RaidaChatTests */,
+				867BF1CF1FBE05A4000DD2B6 /* RaidaChatUITests */,
+				867BF1AE1FBE05A4000DD2B6 /* Products */,
+				35AAF41186BB00A3DF5F59A4 /* Pods */,
+				3FA3A261CDC4B8DFC26A8A82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		867BF1AE1FBE05A4000DD2B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				867BF1AD1FBE05A4000DD2B6 /* RaidaChat.app */,
+				867BF1C11FBE05A4000DD2B6 /* RaidaChatTests.xctest */,
+				867BF1CC1FBE05A4000DD2B6 /* RaidaChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		867BF1AF1FBE05A4000DD2B6 /* RaidaChat */ = {
+			isa = PBXGroup;
+			children = (
+				867BF1B01FBE05A4000DD2B6 /* AppDelegate.swift */,
+				867BF1B21FBE05A4000DD2B6 /* ViewController.swift */,
+				86CD19EC1FE1022500EEC4B4 /* WebSocketChat.swift */,
+				86CD19EE1FE1244F00EEC4B4 /* GroupChatTableViewController.swift */,
+				867BF1B71FBE05A4000DD2B6 /* Assets.xcassets */,
+				867BF1B91FBE05A4000DD2B6 /* LaunchScreen.storyboard */,
+				867BF1BC1FBE05A4000DD2B6 /* Info.plist */,
+				86CD19E41FDA5BDE00EEC4B4 /* Main.storyboard */,
+			);
+			path = RaidaChat;
+			sourceTree = "<group>";
+		};
+		867BF1C41FBE05A4000DD2B6 /* RaidaChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				867BF1C51FBE05A4000DD2B6 /* RaidaChatTests.swift */,
+				867BF1C71FBE05A4000DD2B6 /* Info.plist */,
+			);
+			path = RaidaChatTests;
+			sourceTree = "<group>";
+		};
+		867BF1CF1FBE05A4000DD2B6 /* RaidaChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				867BF1D01FBE05A4000DD2B6 /* RaidaChatUITests.swift */,
+				867BF1D21FBE05A4000DD2B6 /* Info.plist */,
+			);
+			path = RaidaChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		867BF1AC1FBE05A4000DD2B6 /* RaidaChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 867BF1D51FBE05A4000DD2B6 /* Build configuration list for PBXNativeTarget "RaidaChat" */;
+			buildPhases = (
+				1F1AD70E5B0E9E1DF4D6C145 /* [CP] Check Pods Manifest.lock */,
+				867BF1A91FBE05A4000DD2B6 /* Sources */,
+				867BF1AA1FBE05A4000DD2B6 /* Frameworks */,
+				867BF1AB1FBE05A4000DD2B6 /* Resources */,
+				6B78A0DAF138F318A8E15CCF /* [CP] Embed Pods Frameworks */,
+				E225CBF05B0F9F1E7933871B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaidaChat;
+			productName = RaidaChat;
+			productReference = 867BF1AD1FBE05A4000DD2B6 /* RaidaChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		867BF1C01FBE05A4000DD2B6 /* RaidaChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 867BF1D81FBE05A4000DD2B6 /* Build configuration list for PBXNativeTarget "RaidaChatTests" */;
+			buildPhases = (
+				867BF1BD1FBE05A4000DD2B6 /* Sources */,
+				867BF1BE1FBE05A4000DD2B6 /* Frameworks */,
+				867BF1BF1FBE05A4000DD2B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				867BF1C31FBE05A4000DD2B6 /* PBXTargetDependency */,
+			);
+			name = RaidaChatTests;
+			productName = RaidaChatTests;
+			productReference = 867BF1C11FBE05A4000DD2B6 /* RaidaChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		867BF1CB1FBE05A4000DD2B6 /* RaidaChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 867BF1DB1FBE05A4000DD2B6 /* Build configuration list for PBXNativeTarget "RaidaChatUITests" */;
+			buildPhases = (
+				867BF1C81FBE05A4000DD2B6 /* Sources */,
+				867BF1C91FBE05A4000DD2B6 /* Frameworks */,
+				867BF1CA1FBE05A4000DD2B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				867BF1CE1FBE05A4000DD2B6 /* PBXTargetDependency */,
+			);
+			name = RaidaChatUITests;
+			productName = RaidaChatUITests;
+			productReference = 867BF1CC1FBE05A4000DD2B6 /* RaidaChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		867BF1A51FBE05A4000DD2B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Владислав";
+				TargetAttributes = {
+					867BF1AC1FBE05A4000DD2B6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					867BF1C01FBE05A4000DD2B6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 867BF1AC1FBE05A4000DD2B6;
+					};
+					867BF1CB1FBE05A4000DD2B6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 867BF1AC1FBE05A4000DD2B6;
+					};
+				};
+			};
+			buildConfigurationList = 867BF1A81FBE05A4000DD2B6 /* Build configuration list for PBXProject "RaidaChat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 867BF1A41FBE05A4000DD2B6;
+			productRefGroup = 867BF1AE1FBE05A4000DD2B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				867BF1AC1FBE05A4000DD2B6 /* RaidaChat */,
+				867BF1C01FBE05A4000DD2B6 /* RaidaChatTests */,
+				867BF1CB1FBE05A4000DD2B6 /* RaidaChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		867BF1AB1FBE05A4000DD2B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86CD19E51FDA5BDE00EEC4B4 /* Main.storyboard in Resources */,
+				867BF1BB1FBE05A4000DD2B6 /* LaunchScreen.storyboard in Resources */,
+				867BF1B81FBE05A4000DD2B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867BF1BF1FBE05A4000DD2B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867BF1CA1FBE05A4000DD2B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F1AD70E5B0E9E1DF4D6C145 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RaidaChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B78A0DAF138F318A8E15CCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RaidaChat/Pods-RaidaChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Chatto/Chatto.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Chatto.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RaidaChat/Pods-RaidaChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E225CBF05B0F9F1E7933871B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RaidaChat/Pods-RaidaChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		867BF1A91FBE05A4000DD2B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867BF1B31FBE05A4000DD2B6 /* ViewController.swift in Sources */,
+				86CD19EF1FE1244F00EEC4B4 /* GroupChatTableViewController.swift in Sources */,
+				867BF1B11FBE05A4000DD2B6 /* AppDelegate.swift in Sources */,
+				86CD19ED1FE1022600EEC4B4 /* WebSocketChat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867BF1BD1FBE05A4000DD2B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867BF1C61FBE05A4000DD2B6 /* RaidaChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867BF1C81FBE05A4000DD2B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867BF1D11FBE05A4000DD2B6 /* RaidaChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		867BF1C31FBE05A4000DD2B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 867BF1AC1FBE05A4000DD2B6 /* RaidaChat */;
+			targetProxy = 867BF1C21FBE05A4000DD2B6 /* PBXContainerItemProxy */;
+		};
+		867BF1CE1FBE05A4000DD2B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 867BF1AC1FBE05A4000DD2B6 /* RaidaChat */;
+			targetProxy = 867BF1CD1FBE05A4000DD2B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		867BF1B91FBE05A4000DD2B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				867BF1BA1FBE05A4000DD2B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		867BF1D31FBE05A4000DD2B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		867BF1D41FBE05A4000DD2B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		867BF1D61FBE05A4000DD2B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA63760DE488EBE93BF1090 /* Pods-RaidaChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q47T5537YB;
+				INFOPLIST_FILE = RaidaChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = velund.RaidaChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		867BF1D71FBE05A4000DD2B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F7885345BB1B33067CE037 /* Pods-RaidaChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q47T5537YB;
+				INFOPLIST_FILE = RaidaChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = velund.RaidaChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		867BF1D91FBE05A4000DD2B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q47T5537YB;
+				INFOPLIST_FILE = RaidaChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = velund.RaidaChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaidaChat.app/RaidaChat";
+			};
+			name = Debug;
+		};
+		867BF1DA1FBE05A4000DD2B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q47T5537YB;
+				INFOPLIST_FILE = RaidaChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = velund.RaidaChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaidaChat.app/RaidaChat";
+			};
+			name = Release;
+		};
+		867BF1DC1FBE05A4000DD2B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q47T5537YB;
+				INFOPLIST_FILE = RaidaChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = velund.RaidaChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RaidaChat;
+			};
+			name = Debug;
+		};
+		867BF1DD1FBE05A4000DD2B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q47T5537YB;
+				INFOPLIST_FILE = RaidaChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = velund.RaidaChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RaidaChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		867BF1A81FBE05A4000DD2B6 /* Build configuration list for PBXProject "RaidaChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				867BF1D31FBE05A4000DD2B6 /* Debug */,
+				867BF1D41FBE05A4000DD2B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		867BF1D51FBE05A4000DD2B6 /* Build configuration list for PBXNativeTarget "RaidaChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				867BF1D61FBE05A4000DD2B6 /* Debug */,
+				867BF1D71FBE05A4000DD2B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		867BF1D81FBE05A4000DD2B6 /* Build configuration list for PBXNativeTarget "RaidaChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				867BF1D91FBE05A4000DD2B6 /* Debug */,
+				867BF1DA1FBE05A4000DD2B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		867BF1DB1FBE05A4000DD2B6 /* Build configuration list for PBXNativeTarget "RaidaChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				867BF1DC1FBE05A4000DD2B6 /* Debug */,
+				867BF1DD1FBE05A4000DD2B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 867BF1A51FBE05A4000DD2B6 /* Project object */;
+}

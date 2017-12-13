@@ -1,0 +1,18 @@
+PODS:
+  - Chatto (3.1.0)
+  - Starscream (2.1.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Chatto
+  - Starscream
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Chatto: d959be2d284db62c713c68d7c39f2712ff902fa2
+  Starscream: 168fd64c345fb2dea71b0a869c482aeffcf866e4
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: a1eaefe258031dd64ad4fb88cbb8b68a88e8673a
+
+COCOAPODS: 1.4.0.beta.1
