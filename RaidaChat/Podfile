@@ -5,7 +5,6 @@ use_frameworks!
 target 'RaidaChat' do
   
 	pod 'SwiftyJSON'
-	pod 'Chatto'
 	pod 'Starscream'
 	
 end

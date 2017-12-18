@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		867BF1B11FBE05A4000DD2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BF1B01FBE05A4000DD2B6 /* AppDelegate.swift */; };
-		867BF1B31FBE05A4000DD2B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BF1B21FBE05A4000DD2B6 /* ViewController.swift */; };
+		867BF1B31FBE05A4000DD2B6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BF1B21FBE05A4000DD2B6 /* SignInViewController.swift */; };
 		867BF1B81FBE05A4000DD2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867BF1B71FBE05A4000DD2B6 /* Assets.xcassets */; };
 		867BF1BB1FBE05A4000DD2B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867BF1B91FBE05A4000DD2B6 /* LaunchScreen.storyboard */; };
 		867BF1C61FBE05A4000DD2B6 /* RaidaChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BF1C51FBE05A4000DD2B6 /* RaidaChatTests.swift */; };
 		867BF1D11FBE05A4000DD2B6 /* RaidaChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BF1D01FBE05A4000DD2B6 /* RaidaChatUITests.swift */; };
 		86CD19E51FDA5BDE00EEC4B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CD19E41FDA5BDE00EEC4B4 /* Main.storyboard */; };
-		86CD19ED1FE1022600EEC4B4 /* WebSocketChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19EC1FE1022500EEC4B4 /* WebSocketChat.swift */; };
-		86CD19EF1FE1244F00EEC4B4 /* GroupChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19EE1FE1244F00EEC4B4 /* GroupChatTableViewController.swift */; };
+		86CD19ED1FE1022600EEC4B4 /* WebSocketChatMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19EC1FE1022500EEC4B4 /* WebSocketChatMenager.swift */; };
+		86CD19EF1FE1244F00EEC4B4 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19EE1FE1244F00EEC4B4 /* ChatsViewController.swift */; };
+		86CD19F11FE2445E00EEC4B4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19F01FE2445E00EEC4B4 /* Message.swift */; };
+		86CD19F31FE2446900EEC4B4 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19F21FE2446900EEC4B4 /* Chat.swift */; };
+		86CD19F61FE24AD800EEC4B4 /* ChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19F51FE24AD800EEC4B4 /* ChatViewCell.swift */; };
+		86CD19F81FE39A9B00EEC4B4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19F71FE39A9B00EEC4B4 /* ChatViewController.swift */; };
+		86CD19FB1FE39EED00EEC4B4 /* RaidaFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD19FA1FE39EED00EEC4B4 /* RaidaFunction.swift */; };
+		86CD1A0D1FE7A4E300EEC4B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD1A0C1FE7A4E300EEC4B4 /* User.swift */; };
+		86CD1A0F1FE7F6C800EEC4B4 /* MessageSentDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD1A0E1FE7F6C800EEC4B4 /* MessageSentDateTableViewCell.swift */; };
 		CDEE0A6EE6C7469878A049DF /* Pods_RaidaChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3268A1A88E1A5C7977204202 /* Pods_RaidaChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +48,7 @@
 		3268A1A88E1A5C7977204202 /* Pods_RaidaChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaidaChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		867BF1AD1FBE05A4000DD2B6 /* RaidaChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaidaChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		867BF1B01FBE05A4000DD2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		867BF1B21FBE05A4000DD2B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		867BF1B21FBE05A4000DD2B6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		867BF1B71FBE05A4000DD2B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		867BF1BA1FBE05A4000DD2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		867BF1BC1FBE05A4000DD2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,8 +59,15 @@
 		867BF1D01FBE05A4000DD2B6 /* RaidaChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidaChatUITests.swift; sourceTree = "<group>"; };
 		867BF1D21FBE05A4000DD2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86CD19E41FDA5BDE00EEC4B4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		86CD19EC1FE1022500EEC4B4 /* WebSocketChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketChat.swift; sourceTree = "<group>"; };
-		86CD19EE1FE1244F00EEC4B4 /* GroupChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChatTableViewController.swift; sourceTree = "<group>"; };
+		86CD19EC1FE1022500EEC4B4 /* WebSocketChatMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketChatMenager.swift; sourceTree = "<group>"; };
+		86CD19EE1FE1244F00EEC4B4 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		86CD19F01FE2445E00EEC4B4 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		86CD19F21FE2446900EEC4B4 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		86CD19F51FE24AD800EEC4B4 /* ChatViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewCell.swift; sourceTree = "<group>"; };
+		86CD19F71FE39A9B00EEC4B4 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		86CD19FA1FE39EED00EEC4B4 /* RaidaFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidaFunction.swift; sourceTree = "<group>"; };
+		86CD1A0C1FE7A4E300EEC4B4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		86CD1A0E1FE7F6C800EEC4B4 /* MessageSentDateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSentDateTableViewCell.swift; sourceTree = "<group>"; };
 		C9F7885345BB1B33067CE037 /* Pods-RaidaChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaidaChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaidaChat/Pods-RaidaChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,10 +139,10 @@
 		867BF1AF1FBE05A4000DD2B6 /* RaidaChat */ = {
 			isa = PBXGroup;
 			children = (
+				86CD1A0B1FE7A45B00EEC4B4 /* Models */,
+				86CD19F91FE39ECF00EEC4B4 /* Raida */,
+				86CD19F41FE2447800EEC4B4 /* Controllers */,
 				867BF1B01FBE05A4000DD2B6 /* AppDelegate.swift */,
-				867BF1B21FBE05A4000DD2B6 /* ViewController.swift */,
-				86CD19EC1FE1022500EEC4B4 /* WebSocketChat.swift */,
-				86CD19EE1FE1244F00EEC4B4 /* GroupChatTableViewController.swift */,
 				867BF1B71FBE05A4000DD2B6 /* Assets.xcassets */,
 				867BF1B91FBE05A4000DD2B6 /* LaunchScreen.storyboard */,
 				867BF1BC1FBE05A4000DD2B6 /* Info.plist */,
@@ -153,6 +167,61 @@
 				867BF1D21FBE05A4000DD2B6 /* Info.plist */,
 			);
 			path = RaidaChatUITests;
+			sourceTree = "<group>";
+		};
+		86CD19F41FE2447800EEC4B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86CD1A091FE7A42200EEC4B4 /* Welcome */,
+				86CD1A081FE7A35F00EEC4B4 /* Chats */,
+				86CD1A0A1FE7A43100EEC4B4 /* Chat */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		86CD19F91FE39ECF00EEC4B4 /* Raida */ = {
+			isa = PBXGroup;
+			children = (
+				86CD19FA1FE39EED00EEC4B4 /* RaidaFunction.swift */,
+				86CD19EC1FE1022500EEC4B4 /* WebSocketChatMenager.swift */,
+			);
+			path = Raida;
+			sourceTree = "<group>";
+		};
+		86CD1A081FE7A35F00EEC4B4 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				86CD19EE1FE1244F00EEC4B4 /* ChatsViewController.swift */,
+				86CD19F51FE24AD800EEC4B4 /* ChatViewCell.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		86CD1A091FE7A42200EEC4B4 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				867BF1B21FBE05A4000DD2B6 /* SignInViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		86CD1A0A1FE7A43100EEC4B4 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				86CD19F71FE39A9B00EEC4B4 /* ChatViewController.swift */,
+				86CD1A0E1FE7F6C800EEC4B4 /* MessageSentDateTableViewCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		86CD1A0B1FE7A45B00EEC4B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86CD19F01FE2445E00EEC4B4 /* Message.swift */,
+				86CD19F21FE2446900EEC4B4 /* Chat.swift */,
+				86CD1A0C1FE7A4E300EEC4B4 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,13 +382,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RaidaChat/Pods-RaidaChat-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Chatto/Chatto.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Chatto.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -350,10 +417,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				867BF1B31FBE05A4000DD2B6 /* ViewController.swift in Sources */,
-				86CD19EF1FE1244F00EEC4B4 /* GroupChatTableViewController.swift in Sources */,
+				867BF1B31FBE05A4000DD2B6 /* SignInViewController.swift in Sources */,
+				86CD19FB1FE39EED00EEC4B4 /* RaidaFunction.swift in Sources */,
+				86CD19F31FE2446900EEC4B4 /* Chat.swift in Sources */,
+				86CD19EF1FE1244F00EEC4B4 /* ChatsViewController.swift in Sources */,
+				86CD19F81FE39A9B00EEC4B4 /* ChatViewController.swift in Sources */,
+				86CD19F11FE2445E00EEC4B4 /* Message.swift in Sources */,
+				86CD1A0D1FE7A4E300EEC4B4 /* User.swift in Sources */,
+				86CD19F61FE24AD800EEC4B4 /* ChatViewCell.swift in Sources */,
 				867BF1B11FBE05A4000DD2B6 /* AppDelegate.swift in Sources */,
-				86CD19ED1FE1022600EEC4B4 /* WebSocketChat.swift in Sources */,
+				86CD19ED1FE1022600EEC4B4 /* WebSocketChatMenager.swift in Sources */,
+				86CD1A0F1FE7F6C800EEC4B4 /* MessageSentDateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
