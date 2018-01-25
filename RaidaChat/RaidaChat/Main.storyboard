@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="275" placeholderIntrinsicHeight="234" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2LD-kR-4rd">
-                                <rect key="frame" x="50" y="277" width="275" height="150"/>
+                                <rect key="frame" x="50" y="277" width="275" height="210"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BxU-cX-CYD">
                                         <rect key="frame" x="0.0" y="0.0" width="275" height="30"/>
@@ -35,17 +35,28 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dP-IG-aZn">
                                         <rect key="frame" x="0.0" y="120" width="275" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.48001760244369507" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Войти">
-                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="conection:" destination="ElS-HH-571" eventType="touchUpInside" id="bDH-PX-1TQ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sap-15-GE5">
+                                        <rect key="frame" x="0.0" y="180" width="275" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Регистрация">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showRegistration:" destination="ElS-HH-571" eventType="touchUpInside" id="fs4-N2-q9P"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YR0-ka-rWD" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="2LD-kR-4rd" secondAttribute="bottom" constant="240" id="9rv-cy-U0B"/>
                             <constraint firstItem="2LD-kR-4rd" firstAttribute="leading" secondItem="YR0-ka-rWD" secondAttribute="leading" constant="50" id="R1t-3e-K5Q"/>
@@ -55,10 +66,69 @@
                         <viewLayoutGuide key="safeArea" id="YR0-ka-rWD"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pfo-40-xhQ"/>
+                    <connections>
+                        <outlet property="login" destination="BxU-cX-CYD" id="taR-NT-5mz"/>
+                        <outlet property="password" destination="ft6-9K-YF2" id="fCD-9X-7Yp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87d-VM-W3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="36" y="33.733133433283363"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="sZy-Sf-uKH">
+            <objects>
+                <viewController storyboardIdentifier="Registration" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YgK-cg-CqH" customClass="RegistrationViewController" customModule="RaidaChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcR-tL-epQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="275" placeholderIntrinsicHeight="234" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="LPF-SK-5jn">
+                                <rect key="frame" x="50" y="268.5" width="275" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3aH-Bu-xrY">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sTP-x4-fPP">
+                                        <rect key="frame" x="0.0" y="60" width="275" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ga9-Na-gZm">
+                                        <rect key="frame" x="0.0" y="120" width="275" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Зарегестрироваться">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="conection:" destination="ElS-HH-571" eventType="touchUpInside" id="6vh-ZH-bdu"/>
+                                            <action selector="tapRegistration:" destination="YgK-cg-CqH" eventType="touchUpInside" id="lhL-M0-emD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LPF-SK-5jn" firstAttribute="centerX" secondItem="0Ra-ug-ewZ" secondAttribute="centerX" id="Hn3-SN-ED3"/>
+                            <constraint firstItem="LPF-SK-5jn" firstAttribute="centerY" secondItem="0Ra-ug-ewZ" secondAttribute="centerY" id="WNO-7f-ImU"/>
+                            <constraint firstItem="LPF-SK-5jn" firstAttribute="leading" secondItem="0Ra-ug-ewZ" secondAttribute="leading" constant="50" id="smx-uv-RXg"/>
+                            <constraint firstItem="0Ra-ug-ewZ" firstAttribute="trailing" secondItem="LPF-SK-5jn" secondAttribute="trailing" constant="50" id="ueY-hT-ZE6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Ra-ug-ewZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="login" destination="3aH-Bu-xrY" id="IXK-Le-x6Y"/>
+                        <outlet property="password" destination="sTP-x4-fPP" id="8SZ-0z-Rke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHb-jM-t6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="736"/>
         </scene>
         <!--Chats View Controller-->
         <scene sceneID="5IS-bV-WqN">

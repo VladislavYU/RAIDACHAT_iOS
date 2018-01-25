@@ -8,14 +8,30 @@
 
 import Foundation
 
-struct Message{
+struct Message: Codable{
     let guidMsg: String
-    let textMsg: String
+    var textMsg: String
     let sender: String
     let group: String
     let recipient: String
-    let sendTime: String
-    let curFrg: String
-    let totalFrg: String
+    let sendTime: CLong
+    let curFrg: Int
+    let totalFrg: Int
+    let senderName: String
     let groupName: String
+}
+
+struct SendMessage: Codable {
+    let recipientId: String
+    let recipientLogin: String
+    let toGroup: Bool
+    let textMsg: String
+    let guidMsg: String
+    let sendTime: CLong
+    let curFrg: Int
+    let totalFrg: Int
+}
+
+struct Messages: Codable {
+    let data: [Message]
 }

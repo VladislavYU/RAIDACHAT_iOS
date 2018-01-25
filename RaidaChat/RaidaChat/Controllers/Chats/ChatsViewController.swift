@@ -11,21 +11,31 @@ import UIKit
 class ChatsViewController: UITableViewController {
     
     
-    var listChats: [Chat] = [Chat(id: 1, name: "1"), Chat(id: 2, name: "2")]
-    var socketChat: WebSocketChatMenager!
+    var listChats: [Dialog] = []
+    var raida: ControllerRaida!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        raida.deligateDialog = self
+//        raida.requestGetMyDialog()
+        raida.requestGetMsg(getAll: true, onGroup: false, onlyId: "")
+//        socketChat.webSocketList[0]21.onText = { (text: String) in
+//            do {
+//                let data = text.data(using: .utf8)
+//                let json = try JSONSerialization.jsonObject(with: data!, options: [])
+//
+//                if let groups = json["data"].
+//            } catch {
+//                print(error)
+//            }
         
+//        }
         
-        socketChat.getMyDialogs()
-        
-        for socket in socketChat.webSocketList{
-            socket.onText = { (text: String) in
-            
-            }
-        }
-        
+    }
+    
+    func setupTableView(){
+        tableView.tableFooterView = UIView()
     }
 
 
@@ -48,13 +58,24 @@ class ChatsViewController: UITableViewController {
     }
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let chat = listChats[indexPath.row]
-        let chat = Chat(id: 1, name: "odin")
+        let chat = listChats[indexPath.row]
         let chatView = ChatViewController(chat: chat)
-        socketChat.getMessange()
         
         present(chatView, animated: true, completion: nil)
     }
 
+}
+
+extension ChatsViewController: RaidaDialogsDeligate{
+    func getDialogs(dialogs: [Dialog]?) {
+        guard dialogs != nil else {
+            print("dialogs == nil")
+            return
+        }
+        listChats = dialogs!
+        tableView.reloadData()
+    }
+    
+    
 }
 

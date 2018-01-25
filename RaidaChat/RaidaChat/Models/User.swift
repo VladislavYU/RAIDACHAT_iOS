@@ -8,12 +8,7 @@
 
 import Foundation
 
-class User {
+struct User: Encodable {
     let login: String!
     let password: String!
-    
-    init(login: String, password: String) {
-        self.login = login
-        self.password = password
-    }
 }
